@@ -50,6 +50,9 @@ nav .navbar-right ul li a {
   font-size: 25px;
   font-weight: bold;
 }
+nav .navbar-right ul li a:hover {
+  border-bottom: 2px solid white;
+}
 
 header {
   width: 100%;

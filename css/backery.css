@@ -50,6 +50,9 @@ nav .navbar-right ul li a {
   font-size: 25px;
   font-weight: bold;
 }
+nav .navbar-right ul li a:hover {
+  border-bottom: 2px solid white;
+}
 
 header {
   width: 100%;
@@ -64,16 +67,17 @@ header {
 }
 
 .backery {
+  display: grid;
+  grid-template-rows: 0.6fr 1fr;
   height: 85vh;
   padding-right: 40px;
   padding-top: 95px;
-  display: grid;
-  grid-template-rows: 0.6fr 1fr;
 }
 .backery .header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 .backery img {
   width: 90vh;
@@ -81,17 +85,18 @@ header {
 .backery .in {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 40px;
+  padding-top: 65px;
 }
 .backery .in .right {
   display: grid;
-  grid-template-rows: 0.2fr 0.3fr 0.2fr;
+  grid-template-rows: 0.2fr 0.3fr 0.3fr;
 }
 .backery .in .right h1 {
   font-size: 25px;
 }
 .backery .in .right .paragraph {
   font-size: 20px;
+  padding-bottom: 50px;
 }
 .backery .in .right .size {
   display: grid;
@@ -111,12 +116,12 @@ header {
 }
 
 .product {
-  height: 320vh;
-  padding-left: 45px;
-  padding-right: 45px;
   display: grid;
   grid-template-rows: 0.2fr 7fr;
   justify-items: center;
+  height: 360vh;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 .product .backery-h1 {
   border: 1px solid rgb(224, 206, 206);
@@ -124,6 +129,8 @@ header {
   background-color: rgb(224, 206, 206);
   border-radius: 10px;
   color: black;
+  width: 30%;
+  text-align: center;
 }
 .product .img .butter1,
 .product .img .butter2,
@@ -134,7 +141,7 @@ header {
 .product .img .butter7 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .product .img .butter2,
 .product .img .butter4,

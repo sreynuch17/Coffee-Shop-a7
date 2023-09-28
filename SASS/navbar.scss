@@ -48,6 +48,9 @@ nav{
                 color: white;
                 font-size: 25px;
                 font-weight: bold;
+                &:hover{
+                    border-bottom: 2px solid white;
+                }
             }
         }
     }
