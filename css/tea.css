@@ -51,12 +51,8 @@
 
 .product {
   display: grid;
-  grid-template-rows: 0.2fr 7fr;
+  grid-template-rows: 0.2fr 4fr;
   justify-items: center;
-  height: 360vh;
-  padding-left: 45px;
-  padding-right: 45px;
-  background-color: blue;
 }
 .product .backery-h1 {
   border: 1px solid rgb(224, 206, 206);

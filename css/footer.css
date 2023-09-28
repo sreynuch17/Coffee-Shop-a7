@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-/*# sourceMappingURL=footer.css.map */eight: 40vh;
-=======
 footer {
   background-color: #7E3316;
-  height: 42vh;
->>>>>>> 4e543742357e0e678a495f6e983553ecf349dc03
+  height: 40vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
@@ -15,7 +11,6 @@ footer .footer-left {
 footer .footer-left .list {
   display: grid;
   gap: 20px;
-  padding-top: 20px;
 }
 footer .footer-center {
   display: flex;

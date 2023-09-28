@@ -5,13 +5,14 @@
     grid-template-rows: 0.6fr 1fr;
     height: 85vh;
     padding-right: 40px;
-    padding-top:95px;
+    padding-top: 95px;
+
     .header {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 20px;
-        
+
     }
 
 
@@ -25,20 +26,20 @@
         grid-template-columns: 1fr 1fr;
         padding-top: 65px;
 
-        .right { 
+        .right {
             display: grid;
-            grid-template-rows: 0.2fr 0.6fr ;
+            grid-template-rows: 0.2fr 0.6fr;
 
-            h1{
+            h1 {
                 font-size: 25px;
-                
+
             }
-           
+
 
             .paragraph {
                 font-size: 20px;
                 padding-bottom: 50px;
-              
+
             }
 
             .size {
@@ -68,15 +69,12 @@
         }
     }
 }
-.product { 
+
+.product {
     display: grid;
-    grid-template-rows: 0.2fr 7fr;  
+    grid-template-rows: 0.2fr 4fr;
     justify-items: center;
-    height: 360vh;
-    padding-left: 45px;
-    padding-right: 45px;
-    background-color: blue;
- 
+
 
     .backery-h1 {
         border: 1px solid rgb(224, 206, 206);
@@ -86,7 +84,9 @@
         color: black;
         width: 30%;
         text-align: center;
-        
 
     }
+
+    
+
 }

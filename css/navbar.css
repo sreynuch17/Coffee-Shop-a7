@@ -13,6 +13,9 @@ nav {
   height: 100px;
   color: white;
   background: #560000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 nav .navbar-left {
   padding-left: 40px;
@@ -31,15 +34,17 @@ nav .navbar-right {
   display: flex;
   align-items: center;
   padding-right: 40px;
+}
+nav .navbar-right ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-nav .navbar-right li {
+nav .navbar-right ul li {
   list-style: none;
   display: flex;
 }
-nav .navbar-right li a {
+nav .navbar-right ul li a {
   text-decoration: none;
   color: white;
   font-size: 25px;
@@ -112,10 +117,4 @@ header {
   nav #click:checked ~ .menu-bars i::before {
     content: "\f00d";
   }
-}
-header {
-  width: 100%;
-  height: 500px;
-  background-image: url("../image/image 6.png");
-  background-size: cover;
 }/*# sourceMappingURL=navbar.css.map */
