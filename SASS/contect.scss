@@ -1,4 +1,4 @@
-@import"../css/navbar.css";
+@import"./navbar.scss";
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +13,10 @@
     height: 115vh;
     display: grid;
     grid-template-rows: 1fr 8fr;
-    // background: #7E3316;
-    padding: 80px 70px 0 70px;
+    padding: 110px 70px 0 70px;
 
     .title {
-        padding-top: 15px;
+        // padding-top: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         
@@ -98,6 +97,6 @@
     }
 
 }
-@import"../css/footer.css";
+@import"./footer.scss";
 
 

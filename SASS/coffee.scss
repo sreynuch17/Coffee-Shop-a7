@@ -124,16 +124,21 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 70px;
-    .select{
+    .right{
+        margin: 40px;
+        .select{
         margin-top: 8%;
+        p {
+            margin-top: 4%;
+        }
         i{
             margin-left: 55%;
-        } 
+        }
+        &:hover{
+            color: red;
+        }
+
     }
-    // .select i{
-    //     margin-left: 55%;
-    // } 
-    .right p {
-        margin-top: 4%;
     }
+    
 }

@@ -109,12 +109,18 @@ nav .navbar-right ul li a {
   grid-template-columns: 1fr 1fr;
   margin: 70px;
 }
-.coffee-menu .select {
+.coffee-menu .right {
+  margin: 40px;
+}
+.coffee-menu .right .select {
   margin-top: 8%;
 }
-.coffee-menu .select i {
+.coffee-menu .right .select p {
+  margin-top: 4%;
+}
+.coffee-menu .right .select i {
   margin-left: 55%;
 }
-.coffee-menu .right p {
-  margin-top: 4%;
+.coffee-menu .right .select:hover {
+  color: red;
 }/*# sourceMappingURL=coffee.css.map */
