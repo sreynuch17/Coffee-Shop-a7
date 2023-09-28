@@ -108,4 +108,13 @@ nav .navbar-right ul li a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 70px;
+}
+.coffee-menu .select {
+  margin-top: 8%;
+}
+.coffee-menu .select i {
+  margin-left: 55%;
+}
+.coffee-menu .right p {
+  margin-top: 4%;
 }/*# sourceMappingURL=coffee.css.map */

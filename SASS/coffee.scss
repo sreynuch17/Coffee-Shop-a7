@@ -124,4 +124,16 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 70px;
+    .select{
+        margin-top: 8%;
+        i{
+            margin-left: 55%;
+        } 
+    }
+    // .select i{
+    //     margin-left: 55%;
+    // } 
+    .right p {
+        margin-top: 4%;
+    }
 }
