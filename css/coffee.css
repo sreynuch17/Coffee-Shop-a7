@@ -61,7 +61,7 @@ nav .navbar-right ul li a {
   align-items: center;
 }
 .Cappuccino img {
-  width: 80vh;
+  width: 90vh;
 }
 .Cappuccino .in {
   display: grid;
@@ -92,13 +92,20 @@ nav .navbar-right ul li a {
 }
 
 .product {
+  color: white;
   display: flex;
   justify-content: center;
 }
 .product .Coffee-h1 {
-  border: 1px solid rgba(156, 147, 147, 0.698);
+  width: 200px;
   padding: 20px;
   background-color: rgba(156, 147, 147, 0.698);
   border-radius: 10px;
-  width: 200px;
+}
+
+.coffee-menu {
+  background: pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 70px;
 }/*# sourceMappingURL=coffee.css.map */

@@ -6,45 +6,33 @@
 body {
     width: 100%;
 }
+nav{
 
-nav {
-    display: flex;
-    // width: 100%;
+    display:flex;
+    width: 100%;
     height: 100px;
     color: white;
     background: #560000;
-
-    .navbar-left {
-        padding-left: 40px;
-        display: flex;
-        gap: 40px;
-        align-items: center;
-        flex: 1.2;
-
-        img {
-            width: 85px;
-            height: 80px;
-            border-radius: 50%;
-        }
+   .navbar-left {
+    padding-left: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex: 1;
+    img{
+        width: 85px;
+        height: 80px;
+        border-radius: 50%;
     }
-
-    #click {
-        display: none;
-    }
-
-    .fa-bars {
-        color: white;
-        font-size: 2rem;
-        cursor: pointer;
-        display: none;
-    }
-
-    ul {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        padding-right: 40px;
-
+    
+    
+   }
+   .navbar-right{
+    flex:1.3;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    
 
         // ul {
         width: 100%;
@@ -143,4 +131,11 @@ header {
             content: "\f00d";
         }
     }
+}
+header{
+    width: 100%;
+    height: 500px;
+    background-image: url("../image/image\ 6.png");
+    background-size: cover;
+    
 }
