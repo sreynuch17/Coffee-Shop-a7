@@ -1,0 +1,133 @@
+@import "./navbar.scss";
+.all{
+    background-color: #BD8A5B;
+    color: white;
+}
+
+.backery {
+    // background-color: blueviolet;
+    height: 85vh;
+    padding-right: 40px;
+    padding-top:95px;
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+
+    img {
+        width: 90vh;
+
+
+    }
+
+    .in {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 40px;
+
+        .right {
+            h1{
+                font-size: 25px;
+            }
+
+            display: grid;
+            grid-template-rows: 0.2fr 0.3fr 0.2fr;
+
+            .paragraph {
+                font-size: 20px;
+            }
+
+            .size {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                font-size: 22px;
+
+            }
+
+            .star {
+                display: flex;
+                flex-direction: row;
+
+                .color {
+
+                    color: yellow;
+                    font-size: 20px;
+
+                    .fa:nth-child(5) {
+                        color: black;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+.product {
+    height: 320vh;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: grid;
+    grid-template-rows: 0.2fr 7fr;
+    // background-color: pink;
+    justify-items: center;
+
+    .backery-h1 {
+        border: 1px solid rgb(224, 206, 206);
+        padding: 20px;
+        background-color: rgb(224, 206, 206);
+        border-radius: 10px;
+        color: black;
+        // font-size: 25px;
+
+    }
+
+    .img {
+
+        .butter1,
+        .butter2,
+        .butter3,
+        .butter4,
+        .butter5,
+        .butter6,
+        .butter7 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 50px;
+
+        }
+
+        .butter2,
+        .butter4,
+        .butter6 {
+            display: grid;
+            justify-items: end;
+        }
+
+        img {
+            width: 70vh;
+        }
+        .text p {
+            // background-color: red;
+            font-size: 20px;
+            padding-top: 30px;
+
+        }
+        .text,h1{
+            font-size: 30px;
+        }
+
+        .price-backery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            
+        }
+    }
+}

@@ -1,6 +1,3 @@
-
-/*# sourceMappingURL=navbar.css.map */
-
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +8,9 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   height: 100px;
@@ -22,7 +22,7 @@ nav .navbar-left {
   display: flex;
   gap: 40px;
   align-items: center;
-  flex: 1;
+  flex: 1.2;
 }
 nav .navbar-left img {
   width: 85px;
@@ -30,7 +30,7 @@ nav .navbar-left img {
   border-radius: 50%;
 }
 nav .navbar-right {
-  flex: 1.3;
+  flex: 1;
   display: flex;
   align-items: center;
   padding-right: 40px;
@@ -49,5 +49,11 @@ nav .navbar-right ul li a {
   color: white;
   font-size: 25px;
   font-weight: bold;
-}/*# sourceMappingURL=navbar.css.map */
+}
 
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url("../image/image 6.png");
+  background-size: cover;
+}/*# sourceMappingURL=navbar.css.map */
