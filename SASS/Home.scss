@@ -1,0 +1,195 @@
+@import "./navbar.scss";
+
+body {
+  background-color: #581B03;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  // padding: 40px;
+  padding-top: 120px;
+  background-image: url("../image/background.png");
+  background-size: 1370px 650px;
+  background-repeat: no-repeat;
+  position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  .base {
+    padding: 30px 0 0 50px;
+
+    // padding-top: 50px;
+    .head {
+      background: #000000;
+
+    }
+
+    h1 {
+      display: flex;
+      font-size: 30px;
+      align-items: center;
+      color: white;
+    }
+
+    .title {
+      padding: 40px 0;
+      color: white;
+      width: 250px;
+    }
+
+    .card {
+      padding: 30px 30px;
+      border-radius: 20px;
+      background: #00000062;
+      display: flex;
+      width: 260px;
+      flex-direction: column;
+      color: white;
+
+      span {
+        padding-top: 10px;
+        font-size: 25px;
+      }
+
+      .fa-fa-gift {
+        display: flex;
+        font-size: small;
+
+        p {
+          display: flex;
+          flex-direction: row;
+
+        }
+      }
+    }
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  color: white;
+  // background: hsl(0, 93%, 12%);
+  flex-direction: column;
+
+  // padding-top: 50px;
+  h2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 40px;
+  }
+
+  .menu {
+    height: 75vh;
+    display: flex;
+    justify-content: space-evenly;
+
+    .A {
+      height: 100%;
+      .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 350px;
+        height: 430px;
+        background: #D9D9D9;
+
+        .abc {
+          display: flex;
+          flex-direction: column;
+
+          .name {
+            display: flex;
+            justify-content: center;
+
+            span {
+              color: black;
+              font-size: 30px;
+              font-weight: bold;
+            }
+
+            title {
+              color: white;
+            }
+          }
+
+          .price {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px 0 20px;
+            color: black;
+            font-size: 25px;
+          }
+        }
+      }
+      .title{
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        
+      }
+    }
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 50px;
+  color: white;
+  h3 {
+    font-size: 40px;
+  }
+  .card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    background: #555555;
+    .latte{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        padding-right: 40px;
+        padding-top: 60px;
+        margin-top: 50px;
+        width: 350px;
+      }
+      .green-tea{
+        display: flex;
+        flex-direction: column;
+        img{
+          padding-right: 40px;
+          padding-top: 60px;
+          margin-top: 50px;
+          width: 300px;
+        }
+      }
+      .bakery{
+        flex-direction: column;
+        img{
+          display: flex;
+          margin-top: 80px;
+          font-size: 100px;
+          border-radius: 20px;
+        }
+        h4{
+         
+          // justify-content: center;
+          // font-size: 30px;
+          // text-align: center;
+          // align-items: center;
+        }
+      }
+      
+    }
+  }
+}
