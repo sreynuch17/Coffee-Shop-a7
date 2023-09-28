@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background: rgb(214, 143, 167);
+}
+nav{
+
+    display:flex;
+    width: 100%;
+    height: 100px;
+    color: white;
+    background: #560000;
+   .navbar-left {
+    padding-left: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex: 1;
+    img{
+        width: 85px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    
+    
+   }
+   .navbar-right{
+    flex:1.3;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    
+
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        li{
+            list-style: none;
+            display: flex;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+    }
+   }
+}
+.Cappuccino {
+    padding-right: 40px;
+    color: white;
+    display: grid;
+    grid-template-rows: 0.6fr 1fr;
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 80vh;
+
+    }
+
+    .in {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        .right {
+
+            display: grid;
+            grid-template-rows: 0.2fr 0.3fr 0.2fr ;
+
+            .paragraph {
+                font-size: 20px;
+            }
+
+            .size {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                font-size: 22px;
+
+            }
+
+            .star {
+                display: flex;
+                flex-direction: row;
+
+                .color {
+
+                    color: yellow;
+                    font-size: 20px;
+
+                    .fa:nth-child(5) {
+                        color: black;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+.product{
+    display: flex;
+    justify-content: center;
+    .Coffee-h1 {
+    border: 1px solid rgba(156, 147, 147, 0.698);
+    padding: 20px;
+    background-color: rgba(156, 147, 147, 0.698);
+    border-radius: 10px;
+    width: 200px;
+}
+}
