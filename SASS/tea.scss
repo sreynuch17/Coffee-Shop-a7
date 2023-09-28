@@ -1,8 +1,4 @@
-@import "./navbar.scss";
-.all{
-    background-color: #BD8A5B;
-    color: white;
-}
+@import"../css/navbar.css";
 
 .backery {
     display: grid;
@@ -29,14 +25,15 @@
         grid-template-columns: 1fr 1fr;
         padding-top: 65px;
 
-        .right {
+        .right { 
+            display: grid;
+            grid-template-rows: 0.2fr 0.6fr ;
+
             h1{
                 font-size: 25px;
                 
             }
-
-            display: grid;
-            grid-template-rows: 0.2fr 0.3fr 0.3fr;
+           
 
             .paragraph {
                 font-size: 20px;
@@ -48,6 +45,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 font-size: 22px;
+                gap: 10px;
 
             }
 
@@ -70,7 +68,6 @@
         }
     }
 }
-
 .product { 
     display: grid;
     grid-template-rows: 0.2fr 7fr;  
@@ -78,7 +75,7 @@
     height: 360vh;
     padding-left: 45px;
     padding-right: 45px;
-    
+    background-color: blue;
  
 
     .backery-h1 {
@@ -89,49 +86,7 @@
         color: black;
         width: 30%;
         text-align: center;
+        
 
-    }
-
-    .img {
-
-        .butter1,
-        .butter2,
-        .butter3,
-        .butter4,
-        .butter5,
-        .butter6,
-        .butter7 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding-top: 100px;
-
-        }
-
-        .butter2,
-        .butter4,
-        .butter6 {
-            display: grid;
-            justify-items: end;
-        }
-
-        img {
-            width: 70vh;
-        }
-        .text p {
-            // background-color: red;
-            font-size: 20px;
-            padding-top: 30px;
-
-        }
-        .text,h1{
-            font-size: 30px;
-        }
-
-        .price-backery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            
-            
-        }
     }
 }
