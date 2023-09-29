@@ -8,14 +8,14 @@ body {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   width: 100%;
   height: 100px;
   color: white;
   background: #560000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 nav .navbar-left {
   padding-left: 40px;
@@ -50,17 +50,15 @@ nav .navbar-right ul li a {
   font-size: 25px;
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-nav .navbar-right li a:hover {
-  border-bottom: 2px solid white;
-}
->>>>>>> 3d8e7e756a44e5f8238a0587064f823f07b3eb08
->>>>>>> 9651e924bc53549851ddfac5c548bb09a36b3e10
 
-.all {
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url("../image/image 6.png");
+  background-size: cover;
+}
+
+body {
   background-color: #BD8A5B;
   color: white;
 }
@@ -80,6 +78,9 @@ nav .navbar-right li a:hover {
 }
 .backery img {
   width: 90vh;
+}
+.backery img:hover {
+  padding: 4px 10px;
 }
 .backery .in {
   display: grid;
@@ -130,6 +131,10 @@ nav .navbar-right li a:hover {
   color: black;
   width: 30%;
   text-align: center;
+}
+.product .backery-h1:hover {
+  padding: 10px;
+  background-color: pink;
 }
 .product .img .butter1,
 .product .img .butter2,

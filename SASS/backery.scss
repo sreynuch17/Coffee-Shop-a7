@@ -1,5 +1,5 @@
-@import "./navbar.scss";
-.all{
+@import "../SASS/components/navbar.scss";
+body{
     background-color: #BD8A5B;
     color: white;
 }
@@ -10,22 +10,26 @@
     height: 85vh;
     padding-right: 40px;
     padding-top:95px;
-    .header {
+    .header{
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 20px;
         
     }
-
+    
     img {
         width: 90vh;
+        &:hover {
+            padding:4px 10px;
+        }
     }
 
     .in {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-top: 65px;
+
 
         .right {
             h1{
@@ -68,6 +72,11 @@
         }
     }
 }
+// @include tablet{
+//     .backery{
+//         height: 25vh;
+//     }
+// }
 
 .product { 
     display: grid;
@@ -87,6 +96,13 @@
         color: black;
         width: 30%;
         text-align: center;
+        &:hover {
+            // border-bottom: 2px solid rgb(245, 0, 0);
+            padding: 10px;
+            background-color: pink;
+            
+           
+        }
 
     }
 

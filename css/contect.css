@@ -6,45 +6,41 @@
 body {
   width: 100%;
 }
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
+body nav {
   display: flex;
   width: 100%;
   height: 100px;
   color: white;
   background: #560000;
 }
-nav .navbar-left {
+body nav .navbar-left {
   padding-left: 40px;
   display: flex;
   gap: 40px;
   align-items: center;
   flex: 1;
 }
-nav .navbar-left img {
+body nav .navbar-left img {
   width: 85px;
   height: 80px;
   border-radius: 50%;
 }
-nav .navbar-right {
+body nav .navbar-right {
   flex: 1.3;
   display: flex;
   align-items: center;
   padding-right: 40px;
 }
-nav .navbar-right ul {
+body nav .navbar-right ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-nav .navbar-right ul li {
+body nav .navbar-right ul li {
   list-style: none;
   display: flex;
 }
-nav .navbar-right ul li a {
+body nav .navbar-right ul li a {
   text-decoration: none;
   color: white;
   font-size: 25px;
