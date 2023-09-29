@@ -50,6 +50,15 @@ nav .navbar-right ul li a {
   font-size: 25px;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+nav .navbar-right li a:hover {
+  border-bottom: 2px solid white;
+}
+>>>>>>> 3d8e7e756a44e5f8238a0587064f823f07b3eb08
+>>>>>>> 9651e924bc53549851ddfac5c548bb09a36b3e10
 
 .all {
   background-color: #BD8A5B;
