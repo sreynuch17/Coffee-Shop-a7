@@ -23,6 +23,9 @@ nav {
   height: 100px;
   color: white;
   background: #560000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 nav .navbar-left {
   padding-left: 40px;
