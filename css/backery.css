@@ -118,7 +118,7 @@ header {
     content: "\f00d";
   }
 }
-.all {
+body {
   background-color: #BD8A5B;
   color: white;
 }
@@ -138,6 +138,9 @@ header {
 }
 .backery img {
   width: 90vh;
+}
+.backery img:hover {
+  padding: 4px 10px;
 }
 .backery .in {
   display: grid;
@@ -188,6 +191,10 @@ header {
   color: black;
   width: 30%;
   text-align: center;
+}
+.product .backery-h1:hover {
+  padding: 10px;
+  background-color: pink;
 }
 .product .img .butter1,
 .product .img .butter2,
