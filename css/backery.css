@@ -34,22 +34,26 @@ nav .navbar-right {
   display: flex;
   align-items: center;
   padding-right: 40px;
-}
-nav .navbar-right ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-nav .navbar-right ul li {
+nav .navbar-right li {
   list-style: none;
   display: flex;
 }
-nav .navbar-right ul li a {
+nav .navbar-right li a {
   text-decoration: none;
   color: white;
   font-size: 25px;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+nav .navbar-right li a:hover {
+  border-bottom: 2px solid white;
+}
+>>>>>>> 3d8e7e756a44e5f8238a0587064f823f07b3eb08
 
 .all {
   background-color: #BD8A5B;

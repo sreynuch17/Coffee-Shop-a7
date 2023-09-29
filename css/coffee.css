@@ -8,6 +8,15 @@ body {
   background: rgb(214, 143, 167);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+}
+
 nav {
   display: flex;
   width: 100%;
@@ -108,4 +117,19 @@ nav .navbar-right ul li a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 70px;
+}
+.coffee-menu .right {
+  margin: 40px;
+}
+.coffee-menu .right .select {
+  margin-top: 8%;
+}
+.coffee-menu .right .select p {
+  margin-top: 4%;
+}
+.coffee-menu .right .select i {
+  margin-left: 55%;
+}
+.coffee-menu .right .select:hover {
+  color: red;
 }/*# sourceMappingURL=coffee.css.map */

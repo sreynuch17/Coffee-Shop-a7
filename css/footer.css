@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 /*# sourceMappingURL=footer.css.map */  height: 40vh;
+=======
+<<<<<<< HEAD
+/*# sourceMappingURL=footer.css.map */  height: 42vh;
+=======
+footer {
+  background-color: #7E3316;
+  height: 40vh;
+>>>>>>> 38e235902e2351cc0c91a57a0714ca4f901e97b4
+>>>>>>> 3d8e7e756a44e5f8238a0587064f823f07b3eb08
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
