@@ -18,16 +18,17 @@ nav {
   left: 0;
 }
 nav .navbar-left {
-  padding-left: 40px;
   display: flex;
-  gap: 40px;
   align-items: center;
+  gap: 40px;
+  padding-left: 40px;
   flex: 1;
 }
-nav .navbar-left img {
-  width: 85px;
-  height: 80px;
-  border-radius: 50%;
+nav .navbar-left .logo {
+  display: flex;
+  border-radius: 50px;
+  width: 70px;
+  height: 70px;
 }
 nav .navbar-right {
   flex: 1.3;
