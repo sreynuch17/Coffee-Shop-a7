@@ -152,10 +152,14 @@ header {
 
 body {
   background-color: #581B03;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   width: 100%;
+  height: 620px;
+  background-image: url(../image/background.png);
+  background-size: cover;
   height: 500px;
   padding-top: 120px;
   background-image: url("../image/background.png");
@@ -163,48 +167,49 @@ header {
   background-repeat: no-repeat;
   position: center;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  align-items: start;
 }
 header .base {
-  padding: 20px 0 0 50px;
-}
-header .base .head {
-  background: #000000;
+  flex-direction: column;
+  margin: 0px 0 0 40px;
+  display: flex;
+  padding-bottom: 20px;
 }
 header .base h1 {
-  display: flex;
-  font-size: 30px;
-  align-items: center;
+  margin-top: 50px;
+  font-size: 50px;
+  width: 100%;
   color: white;
 }
-header .base .title {
-  padding: 30px 0;
+header .base P {
+  font-size: 20px;
+  margin-top: 25px;
   color: white;
-  width: 250px;
-  font-size: 25px;
+  width: 300px;
 }
-header .base .card {
-  padding: 10px 10px;
-  border-radius: 20px;
-  background: rgba(0, 0, 0, 0.3843137255);
-  display: flex;
-  width: 260px;
-  flex-direction: column;
+header .car {
+  margin-left: 40px;
+  margin-top: 30px;
+  width: 300px;
+  font-size: 20px;
   color: white;
+  background: rgba(7, 7, 7, 0.7019607843);
 }
-header .base .card span {
-  padding-top: 10px;
-  font-size: 25px;
-}
-header .base .card .fa-fa-gift {
-  display: flex;
-}
-header .base .card .fa-fa-gift p {
-  display: flex;
-  flex-direction: row;
+header .car .card {
+  padding: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  header {
+    width: 100%;
+  }
+}
 .head {
   display: flex;
   justify-content: center;
@@ -215,7 +220,7 @@ header .base .card .fa-fa-gift p {
   display: flex;
   text-align: center;
   flex-direction: column;
-  margin: 20px;
+  margin: 50px;
   font-size: 40px;
 }
 .head .menu {
@@ -233,6 +238,7 @@ header .base .card .fa-fa-gift p {
   width: 350px;
   height: 430px;
   background: #D9D9D9;
+  justify-content: center;
 }
 .head .menu .content .card .content-us {
   display: flex;
@@ -257,19 +263,44 @@ header .base .card .fa-fa-gift p {
   color: black;
   font-size: 25px;
 }
+.head .menu .content .card .content-us .icon {
+  display: flex;
+}
+.head .menu .content .card .content-us .icon img {
+  width: 30px;
+}
+@media screen and (max-width: 768px) {
+  .head .menu .content .card {
+    width: 260px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .head .menu .content .card {
+    height: 325px;
+  }
+}
 .head .menu .content .title {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 70px;
+}
+@media screen and (max-width: 620px) {
+  .head .menu {
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
-  margin: 50px;
+  justify-content: center;
+  margin: 80px;
   color: white;
 }
 .footer h3 {
@@ -277,39 +308,66 @@ header .base .card .fa-fa-gift p {
 }
 .footer .card {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
   justify-content: center;
-  background: #555555;
+  gap: 26%;
+  margin: 30px;
 }
 .footer .card .latte {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  text-align: center;
   align-items: center;
+  font-size: 30px;
+}
+.footer .card .latte p {
+  padding-top: 15px;
 }
 .footer .card .latte img {
-  padding-right: 40px;
-  padding-top: 60px;
-  margin-top: 50px;
-  width: 350px;
+  margin-top: 75px;
+  width: 260px;
+  height: 50vh;
+  margin-left: 25px;
 }
-.footer .card .latte .green-tea {
+.footer .card .latte h4 {
+  position: absolute;
+  padding-top: 360px;
+}
+.footer .card .green-tea {
   display: flex;
   flex-direction: column;
+  font-size: 30px;
 }
-.footer .card .latte .green-tea img {
+.footer .card .green-tea img {
   padding-right: 40px;
-  padding-top: 60px;
-  margin-top: 50px;
-  width: 300px;
+  width: 200px;
+  top: 0;
+  height: 400px;
 }
-.footer .card .latte .bakery {
-  flex-direction: column;
+.footer .card .green-tea h4 {
+  z-index: 1;
+  position: absolute;
+  padding-top: 360px;
+  padding-left: 20px;
 }
-.footer .card .latte .bakery img {
+.footer .card .bakery {
   display: flex;
-  margin-top: 80px;
-  font-size: 100px;
-  border-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+.footer .card .bakery p {
+  padding-top: 50px;
+}
+.footer .card .bakery img {
+  display: flex;
+  margin-right: 45px;
+  margin-top: 30%;
+  height: 38vh;
+  border-radius: 30px;
+}
+.footer .card .bakery h4 {
+  align-items: center;
+  margin-top: 5px;
 }/*# sourceMappingURL=Home.css.map */
