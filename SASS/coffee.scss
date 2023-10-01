@@ -1,4 +1,5 @@
 @import"./components/navbar.scss";
+@import"components/responsive.scss";
 
 * {
     padding: 0;
@@ -26,9 +27,22 @@ body {
         padding-top: 20px;
 
     }
+    @include responsive('Tablet') {
+        h1 {
+            margin-top: 5px;
+            height: 40px;
+            margin-left: 10vh;
+        }
+    }
 
     img {
         width: 90vh;
+    }
+    @include responsive('Tablet') {
+        img {
+            width: 45vh;
+            margin-top: -200px;
+        }
     }
 
     .in {
@@ -44,12 +58,23 @@ body {
                 font-size: 25px;
 
             }
+            @include responsive('Tablet') {
+                h1 {
+                    padding-left: 55px;
+                    margin-top: -200px;
+                }
+            }
 
 
             .paragraph {
                 font-size: 20px;
                 padding-bottom: 50px;
 
+            }
+            @include responsive('Tablet') {
+                .paragraph {
+                    display: none;
+                }
             }
 
             .size {
@@ -58,6 +83,13 @@ body {
                 font-size: 22px;
                 gap: 10px;
 
+            }
+            @include responsive('Tablet') {
+                .size {
+                    padding-left: 55px;
+                    margin-top: -100px;
+                    height: 80px;
+                }
             }
 
             .star {
@@ -75,6 +107,17 @@ body {
                 }
 
 
+            }
+            @include responsive('Tablet') {
+                .star {
+                    position: absolute;
+                    top: 62vh;
+                    padding-left: 55px;
+
+                    .color {
+                        font-size: 15px;
+                    }
+                }
             }
         }
     }
@@ -98,16 +141,30 @@ body {
         text-align: center;
     }
 }
+@include responsive('Tablet') {
+    .product {
+        margin-top: -220px;
+        margin-bottom: -80px;
+    }
+}
 
 .coffee-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: white;
     margin: 20px;
+    @include responsive('Tablet') {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     .Group {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
+        @include responsive('Tablet') {
+            padding-top: -30px;
+        }
+
         img{
             margin-top: 50px;
         }
@@ -121,6 +178,9 @@ body {
 
             .select {
                 margin-top: 8%;
+                @include responsive('Tablet') {
+                    margin-top: 5%;
+                }
 
                 select {
                     width: 20vh;
@@ -171,6 +231,22 @@ body {
         img {
             margin-left: 100px;
             margin-bottom: 36px;
+        }
+    }
+}
+@include responsive('Tablet') {
+    .Specail-coffee{
+        .buy{
+            h1 {
+                font-size: 20px;
+            }
+    
+            button {
+                width: 100px;
+                height: 40px;
+                margin-top: 20vh;
+                border-radius: 10px;
+            }
         }
     }
 }

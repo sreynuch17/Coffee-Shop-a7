@@ -83,8 +83,21 @@ body {
   align-items: center;
   padding-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .COFFEE h1 {
+    margin-top: 5px;
+    height: 40px;
+    margin-left: 10vh;
+  }
+}
 .COFFEE img {
   width: 90vh;
+}
+@media screen and (max-width: 768px) {
+  .COFFEE img {
+    width: 45vh;
+    margin-top: -200px;
+  }
 }
 .COFFEE .in {
   display: grid;
@@ -98,15 +111,33 @@ body {
 .COFFEE .in .right h1 {
   font-size: 25px;
 }
+@media screen and (max-width: 768px) {
+  .COFFEE .in .right h1 {
+    padding-left: 55px;
+    margin-top: -200px;
+  }
+}
 .COFFEE .in .right .paragraph {
   font-size: 20px;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .COFFEE .in .right .paragraph {
+    display: none;
+  }
 }
 .COFFEE .in .right .size {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 22px;
   gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .COFFEE .in .right .size {
+    padding-left: 55px;
+    margin-top: -100px;
+    height: 80px;
+  }
 }
 .COFFEE .in .right .star {
   display: flex;
@@ -118,6 +149,16 @@ body {
 }
 .COFFEE .in .right .star .color .fa:nth-child(5) {
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .COFFEE .in .right .star {
+    position: absolute;
+    top: 62vh;
+    padding-left: 55px;
+  }
+  .COFFEE .in .right .star .color {
+    font-size: 15px;
+  }
 }
 
 .product {
@@ -138,15 +179,32 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .product {
+    margin-top: -220px;
+    margin-bottom: -80px;
+  }
+}
 .coffee-menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
   margin: 20px;
 }
+@media screen and (max-width: 768px) {
+  .coffee-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .coffee-menu .Group {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .coffee-menu .Group {
+    padding-top: -30px;
+  }
 }
 .coffee-menu .Group img {
   margin-top: 50px;
@@ -160,6 +218,11 @@ body {
 }
 .coffee-menu .Group .right .select {
   margin-top: 8%;
+}
+@media screen and (max-width: 768px) {
+  .coffee-menu .Group .right .select {
+    margin-top: 5%;
+  }
 }
 .coffee-menu .Group .right .select select {
   width: 20vh;
@@ -199,4 +262,16 @@ body {
 .Specail-coffee .coffee-2 img {
   margin-left: 100px;
   margin-bottom: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .Specail-coffee .buy h1 {
+    font-size: 20px;
+  }
+  .Specail-coffee .buy button {
+    width: 100px;
+    height: 40px;
+    margin-top: 20vh;
+    border-radius: 10px;
+  }
 }/*# sourceMappingURL=coffee.css.map */

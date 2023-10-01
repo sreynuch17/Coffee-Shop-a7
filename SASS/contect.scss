@@ -1,4 +1,5 @@
-@import"./navbar.scss";
+@import"./components/navbar.scss";
+@import"../SASS/components/responsive.scss";
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,6 @@
     padding: 110px 70px 0 70px;
 
     .title {
-        // padding-top: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         
@@ -26,6 +26,11 @@
             display: flex;
             justify-content: end;
             padding-bottom: 40px;
+        }
+        @include responsive('Tablet'){
+            h1{
+                font-size: 20px;
+            }
         }
 
     }
@@ -96,6 +101,44 @@
         }
     }
 
+}
+@include responsive('Tablet'){
+    .contact{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr 8fr;
+        padding: 110px 70px 50px 70px;
+        .form-map {
+            display: grid;
+            grid-template-columns: 1fr;
+            form{
+                height: auto;
+            }
+            iframe{
+                height: 250px
+            }
+        }
+    }
+}
+@include responsive('Mobile'){
+    .contact{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-rows: 1fr 8fr;
+        padding: 110px 70px 50px 70px;
+        .form-map {
+            display: grid;
+            grid-template-columns: 1fr;
+            form{
+                height: auto;
+            }
+            iframe{
+                display: none;
+            }
+        }
+    }
 }
 @import"./footer.scss";
 
