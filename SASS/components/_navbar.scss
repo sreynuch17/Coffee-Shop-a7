@@ -114,7 +114,6 @@ nav {
             .dropdown {
                 h1{
                     font-size: 30px;
-                    background: #000;
                 }
                 @include responsive('Mobile') {
                     h1{
