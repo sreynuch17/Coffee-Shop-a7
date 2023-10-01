@@ -1,22 +1,27 @@
-*{
+@import"./navbar.scss";
+
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     width: 100%;
     background: rgb(214, 143, 167);
 }
-@import"./components/navbar.scss";
+
 .Cappuccino {
     padding-right: 40px;
     color: white;
     display: grid;
     grid-template-rows: 0.6fr 1fr;
+
     .header {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     img {
         width: 90vh;
 
@@ -30,7 +35,7 @@ body{
         .right {
 
             display: grid;
-            grid-template-rows: 0.2fr 0.3fr 0.2fr ;
+            grid-template-rows: 0.2fr 0.3fr 0.2fr;
 
             .paragraph {
                 font-size: 20px;
@@ -62,38 +67,79 @@ body{
         }
     }
 }
-.product{
-    color: white;
-    display: flex;
-    justify-content: center;
+
+.product {
+    display: grid;
+    grid-template-rows: 0.2fr 2fr;
+    justify-items: center;
+    padding-left: 45px;
+    padding-right: 45px;
+
     .Coffee-h1 {
-    width: 200px;
-    padding: 20px;
-    background-color: rgba(156, 147, 147, 0.698);
-    border-radius: 10px;
-}
+        border: 1px solid rgb(224, 206, 206);
+        padding: 20px;
+        background-color: rgb(224, 206, 206);
+        border-radius: 10px;
+        color: black;
+        width: 30%;
+        text-align: center;
+    }
 }
 
-.coffee-menu{
-    background: pink;
+.coffee-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 70px;
-    .right{
-        margin: 40px;
-        .select{
-        margin-top: 8%;
-        p {
-            margin-top: 4%;
+    color: white;
+
+    .right {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 50px;
+
+        .select {
+            margin-top: 5%;
+
+            select {
+                width: 20vh;
+                height: 30px;
+                border-radius: 10px;
+            }
+
+            i {
+                margin-left: 55%;
+            }
+
+            &:hover {
+                color: red;
+            }
         }
-        i{
-            margin-left: 55%;
-        }
-        &:hover{
-            color: red;
+    }
+}
+
+.Specail-coffee {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px;
+    color: white;
+
+    .buy {
+        h1 {
+            font-size: 50px;
         }
 
+        button {
+            background: red;
+            width: 150px;
+            height: 50px;
+            margin-top: 25vh;
+            border-radius: 10px;
+        }
     }
+
+    .coffee-2 {
+        img {
+            margin-left: 100px;
+            margin-bottom: 37px;
+        }
     }
-    
 }
