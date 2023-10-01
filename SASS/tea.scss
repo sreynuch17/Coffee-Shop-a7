@@ -12,7 +12,7 @@ body {
     display: grid;
     grid-template-rows: 0.6fr 1fr;
     height: 85vh;
-    font-size: 20px;
+    font-size: 15px;
     padding-right: 40px;
     padding-top: 20vh;
 
@@ -68,7 +68,7 @@ body {
             grid-template-rows: 0.2fr 0.6fr;
 
             h1 {
-                font-size: 25px;
+                font-size: 15px;
             }
 
             @include responsive('Tablet') {
@@ -87,7 +87,7 @@ body {
 
 
             .paragraph {
-                font-size: 20px;
+                font-size: 15px;
                 padding-bottom: 50px;
 
             }
@@ -109,7 +109,6 @@ body {
                 grid-template-columns: 1fr 1fr;
                 font-size: 22px;
                 gap: 10px;
-
             }
 
             @include responsive('Tablet') {
@@ -136,7 +135,7 @@ body {
 
                 .color {
 
-                    color: yellow;
+                    color: $yellow-color;
                     font-size: 20px;
 
                     .fa:nth-child(5) {
@@ -250,10 +249,12 @@ body {
 
             @include responsive('Mobile') {
                 margin-left: 98px;
+
                 p {
                     display: none;
                 }
-                .select{
+
+                .select {
                     display: none;
                 }
             }
@@ -283,7 +284,7 @@ body {
                 }
 
                 button {
-                    background: rgb(47, 47, 129);
+                    background: $blue-color;
                     color: $white-color;
                     width: 25%;
                     height: 70%;
@@ -295,7 +296,7 @@ body {
 }
 
 .Source-of-tea-leaf-origin {
-    background: rgba(255, 255, 0, 0.264);
+    background: $green-color;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 50px;
@@ -306,12 +307,13 @@ body {
         grid-template-columns: 1fr;
         margin: 10px;
     }
+
     @include responsive('Mobile') {
         display: none;
     }
 
     img {
-        background: rgba(212, 208, 208, 0.53);
+        background: $puple-color;
         border-radius: 10px;
     }
 

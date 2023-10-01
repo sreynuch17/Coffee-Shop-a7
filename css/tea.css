@@ -161,7 +161,7 @@ body {
   display: grid;
   grid-template-rows: 0.6fr 1fr;
   height: 85vh;
-  font-size: 20px;
+  font-size: 15px;
   padding-right: 40px;
   padding-top: 20vh;
 }
@@ -210,7 +210,7 @@ body {
   grid-template-rows: 0.2fr 0.6fr;
 }
 .tea .in .right h1 {
-  font-size: 25px;
+  font-size: 15px;
 }
 @media screen and (max-width: 768px) {
   .tea .in .right h1 {
@@ -225,7 +225,7 @@ body {
   }
 }
 .tea .in .right .paragraph {
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
@@ -396,7 +396,7 @@ body {
   margin-left: 90px;
 }
 .Tea-menu .Group .right .select button {
-  background: rgb(47, 47, 129);
+  background: blue;
   color: white;
   width: 25%;
   height: 70%;

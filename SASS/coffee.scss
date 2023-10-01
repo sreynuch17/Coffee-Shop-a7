@@ -8,16 +8,16 @@
 
 body {
     width: 100%;
-    background: rgba(189, 138, 91, 1);
+    background: $orange-color;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .COFFEE {
-    color: white;
+    color: $white-color;
     display: grid;
     grid-template-rows: 0.6fr 1fr;
     height: 85vh;
-    font-size: 20px;
+    font-size: 15px;
     padding-right: 40px;
     padding-top: 20vh;
 
@@ -71,13 +71,13 @@ body {
             grid-template-rows: 0.2fr 0.6fr;
 
             h1 {
-                font-size: 25px;
+                font-size: 15px;
 
             }
 
             @include responsive('Tablet') {
                 h1 {
-                    font-size: 35px;
+                    font-size: 15px;
                     margin-left: 10px;
                     margin-top: -200px;
                 }
@@ -137,11 +137,11 @@ body {
 
                 .color {
 
-                    color: yellow;
+                    color: $yellow-color;
                     font-size: 20px;
 
                     .fa:nth-child(5) {
-                        color: black;
+                        color: $balck-color;
                     }
                 }
 
@@ -183,11 +183,11 @@ body {
     margin-top: 20vh;
 
     h1 {
-        border: 1px solid rgb(224, 206, 206);
+        border: 1px solid $wheth-color;
         padding: 20px;
-        background-color: rgb(224, 206, 206);
+        background-color: $wheth-color;
         border-radius: 10px;
-        color: black;
+        color: $balck-color;
         width: 30%;
         text-align: center;
     }
@@ -210,7 +210,7 @@ body {
 .coffee-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: white;
+    color:$white-color;
     margin: 20px;
 
     @include responsive('Tablet') {
@@ -283,8 +283,8 @@ body {
                 }
 
                 button {
-                    background: rgb(47, 47, 129);
-                    color: white;
+                    background: $blue-color;
+                    color: $white-color;
                     width: 25%;
                     height: 60%;
                     border-radius: 5px;
@@ -298,7 +298,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 40px;
-    color: white;
+    color: $white-color;
 
     .buy {
         h1 {
@@ -306,7 +306,7 @@ body {
         }
 
         button {
-            background: red;
+            background: $red-color;
             width: 150px;
             height: 50px;
             margin-top: 20vh;
