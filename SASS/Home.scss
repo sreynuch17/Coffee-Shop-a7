@@ -1,8 +1,9 @@
-@import"./components/navbar.scss";
+@import"./components/navbar";
 @import"./components/responsive.scss";
 
 body {
   background-color: #581B03;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -180,127 +181,71 @@ header {
 
 .footer {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 50px;
+  justify-content: center;
+  margin: 80px;
   color: white;
-
   h3 {
-    margin: 30px;
     font-size: 40px;
   }
-
   .card {
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    gap: 25%;
     justify-content: center;
+    gap: 26%;
     margin: 30px;
-    height: 80vh;
     .latte {
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center;
-
       img {
-        margin-top: 70px;
+        margin-top: 75px;
         width: 260px;
-        height: 53vh;
+        height: 50vh;
+        margin-left: 25px;
       }
-
-      @include responsive('Tablet') {
-        img {
-          width: 220px;
-          height: 35vh;
-        }
-      }
-
-      h4 {
+      h4{
         position: absolute;
         padding-top: 360px;
       }
     }
-
-    @include responsive('Mobile') {
-      .latte {
-        flex-direction: column;
-      }
-    }
-
-    .conten-card {
-
-      .green-tea {
-        display: flex;
-        flex-direction: column;
-
-        img {
-          padding-right: 40px;
-          width: 200px;
-          top: 0;
-          height: 400px;
-
-        }
-        @include responsive('Mobile'){
-          img{
-            margin-left: 30%;
-          }
-        }
-
-        h4 {
-          z-index: 1;
-          position: absolute;
-          padding-top: 360px;
-          padding-left: 20px;
-        }
-      }
-
-      .bakery {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-          display: flex;
-          margin-right: 18px;
-          margin-top: 70px;
-          height: 42vh;
-        }
-
-        @include responsive('Tablet') {
-          img {
-            width: 250px;
-            height: 25vh;
-          }
-        }
-
-        h4 {
-          padding-left: 10px;
-        }
-      }
-    }
-    @include responsive('Mobile'){
-      .conten-card{
-        display: flex;
-        flex-direction: row;
-
-      }
-    }
-
-  }
-
-  @include responsive('Tablet') {
-    .card {
-      gap: 0%;
-    }
-  }
-
-  @include responsive('Mobile') {
-    .card {
+    .green-tea {
+      display: flex;
       flex-direction: column;
+      img {
+        padding-right: 40px;
+        width: 200px;
+        top: 0;
+        height:400px;
+       
+      }
+      h4{
+        z-index: 1;
+        position: absolute;
+        padding-top: 360px;
+        padding-left: 20px;
+      }
+    }
+
+    .bakery {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center ;
+
+      img {
+        display: flex;
+        margin-right: 45px;
+        margin-top: 30%;
+        height: 38vh;
+      }
+
+      h4 {
+        align-items: center;
+        margin-top: 5px;
+      }
     }
   }
 }
