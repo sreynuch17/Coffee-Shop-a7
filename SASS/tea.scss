@@ -1,12 +1,14 @@
-@import"../css/navbar.css";
+@import"../SASS/components/navbar";
 @import"components/responsive.scss";
+@import"components/variables.scss";
 
 body {
-    background: rgba(189, 138, 91, 1);
+    background: $orange-color;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .tea {
-    color: white;
+    color: $white-color;
     display: grid;
     grid-template-rows: 0.6fr 1fr;
     height: 85vh;
@@ -29,6 +31,7 @@ body {
             margin-left: 10vh;
         }
     }
+
     @include responsive('Mobile') {
         .header {
             font-size: 25px;
@@ -47,6 +50,7 @@ body {
             margin-top: -200px;
         }
     }
+
     @include responsive('Mobile') {
         img {
             width: 30vh;
@@ -73,6 +77,7 @@ body {
                     margin-top: -200px;
                 }
             }
+
             @include responsive('Mobile') {
                 h1 {
                     font-size: 15px;
@@ -92,6 +97,7 @@ body {
                     display: none;
                 }
             }
+
             @include responsive('Mobile') {
                 .paragraph {
                     display: none;
@@ -114,6 +120,7 @@ body {
                     font-size: 10px;
                 }
             }
+
             @include responsive('Mobile') {
                 .size {
                     padding-left: 55px;
@@ -133,7 +140,7 @@ body {
                     font-size: 20px;
 
                     .fa:nth-child(5) {
-                        color: black;
+                        color: $balck-color;
                     }
                 }
 
@@ -151,6 +158,7 @@ body {
                     }
                 }
             }
+
             @include responsive('Mobile') {
                 .star {
                     position: absolute;
@@ -162,7 +170,7 @@ body {
                     }
                 }
             }
-            
+
         }
     }
 }
@@ -174,11 +182,11 @@ body {
     justify-items: center;
 
     h1 {
-        border: 1px solid rgb(224, 206, 206);
-        background-color: rgb(224, 206, 206);
+        border: 1px solid $wheth-color;
+        background-color: $wheth-color;
         padding: 20px;
         border-radius: 10px;
-        color: black;
+        color: $balck-color;
         width: 30%;
         text-align: center;
         margin-top: 100px;
@@ -190,6 +198,7 @@ body {
         margin-top: -330px;
     }
 }
+
 @include responsive('Mobile') {
     .product {
         margin-top: -320px;
@@ -201,7 +210,7 @@ body {
 .Tea-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: white;
+    color: $white-color;
 
     @include responsive('Tablet') {
         display: grid;
@@ -211,12 +220,27 @@ body {
     .Group {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
+
         @include responsive('Tablet') {
             padding-top: -30px;
         }
 
+        @include responsive('Mobile') {
+            display: grid;
+            grid-template-columns: 1.5fr;
+        }
+
+
         img {
             margin-top: 20px;
+        }
+
+        @include responsive('Mobile') {
+            img {
+                margin-top: 2px;
+                width: 30vh;
+                margin-left: 98px;
+            }
         }
 
         .right {
@@ -224,13 +248,25 @@ body {
             grid-template-rows: 1fr 1fr 1fr;
             margin: 20px;
 
+            @include responsive('Mobile') {
+                margin-left: 98px;
+                p {
+                    display: none;
+                }
+                .select{
+                    display: none;
+                }
+            }
+
             .select {
                 margin-top: 8%;
+
                 @include responsive('Tablet') {
                     margin-top: 5%;
                 }
+
                 @include responsive('Mobile') {
-                    
+                    margin-top: 3%;
                 }
 
                 select {
@@ -248,7 +284,7 @@ body {
 
                 button {
                     background: rgb(47, 47, 129);
-                    color: white;
+                    color: $white-color;
                     width: 25%;
                     height: 70%;
                     border-radius: 5px;
@@ -264,23 +300,28 @@ body {
     grid-template-columns: 1fr 1fr;
     margin: 50px;
     border-radius: 10px;
+
     @include responsive('Tablet') {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         margin: 10px;
+    }
+    @include responsive('Mobile') {
+        display: none;
     }
 
     img {
         background: rgba(212, 208, 208, 0.53);
         border-radius: 10px;
     }
+
     @include responsive('Tablet') {
         padding-left: 130px;
     }
-    
+
 
     .text {
-        color: white;
+        color: $white-color;
         margin: 20px;
         font-size: 30px;
     }

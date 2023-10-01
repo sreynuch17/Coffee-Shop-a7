@@ -1,4 +1,4 @@
-@import"./components/navbar.scss";
+@import"./components/navbar";
 @import"components/responsive.scss";
 
 * {
@@ -9,6 +9,7 @@
 body {
     width: 100%;
     background: rgba(189, 138, 91, 1);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .COFFEE {
@@ -35,6 +36,13 @@ body {
             margin-left: 10vh;
         }
     }
+    @include responsive('Mobile') {
+        h1 {
+            font-size: 25px;
+            width: 50vh;
+            margin-left: 5vh;
+        }
+    }
 
     img {
         width: 90vh;
@@ -44,6 +52,12 @@ body {
         img {
             width: 45vh;
             margin-top: -200px;
+        }
+    }
+    @include responsive('Mobile') {
+        img {
+            width: 30vh;
+            margin-top: -150px;
         }
     }
 
@@ -68,6 +82,12 @@ body {
                     margin-top: -200px;
                 }
             }
+            @include responsive('Mobile') {
+                h1 {
+                    font-size: 15px;
+                    margin-top: -150px;
+                }
+            }
 
 
             .paragraph {
@@ -77,6 +97,11 @@ body {
             }
 
             @include responsive('Tablet') {
+                .paragraph {
+                    display: none;
+                }
+            }
+            @include responsive('Mobile') {
                 .paragraph {
                     display: none;
                 }
@@ -96,6 +121,13 @@ body {
                     grid-template-rows: 1fr 1fr 1fr;
                     margin-top: -140px;
                     margin-left: 8vh;
+                }
+            }
+            @include responsive('Mobile') {
+                .price {
+                    padding-left: 55px;
+                    margin-top: -170px;
+                    height: 40px;
                 }
             }
 
@@ -124,6 +156,17 @@ body {
 
                     .color {
                         font-size: 18px;
+                    }
+                }
+            }
+            @include responsive('Mobile') {
+                .star {
+                    position: absolute;
+                    top: 57vh;
+                    padding-left: 55px;
+
+                    .color {
+                        font-size: 10px;
                     }
                 }
             }
@@ -156,6 +199,13 @@ body {
         margin-bottom: -80px;
     }
 }
+@include responsive('Mobile') {
+    .product {
+        margin-top: -250px;
+        width: 100vh;
+        margin-left: -200px;
+    }
+}
 
 .coffee-menu {
     display: grid;
@@ -175,14 +225,34 @@ body {
         @include responsive('Tablet') {
             padding-top: -30px;
         }
+        @include responsive('Mobile') {
+            display: grid;
+            grid-template-columns: 1.5fr;
+        }
 
         img {
             margin-top: 50px;
+        }
+        @include responsive('Mobile') {
+            img {
+                margin-top: 2px;
+                width: 30vh;
+                margin-left: 60px;
+            }
         }
 
         .right {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
+            @include responsive('Mobile') {
+                margin-left: 98px;
+                p {
+                    display: none;
+                }
+                .select{
+                    display: none;
+                }
+            }
 
             h1 {
                 margin-top: 42px;
@@ -194,6 +264,10 @@ body {
                 @include responsive('Tablet') {
                     margin-top: 5%;
                 }
+                @include responsive('Mobile') {
+                    margin-top: 3%;
+                }
+
 
                 select {
                     width: 20vh;
@@ -276,6 +350,26 @@ body {
 
             h2 {
                 display: none;
+            }
+        }
+    }
+}
+@include responsive('Mobile') {
+    .Specail-coffee {
+        img {
+            width: 20vh;
+            margin-right: 40px;
+        }
+
+        .buy {
+            h1 {
+                font-size: 18px;
+            }
+
+            button {
+                width: 100px;
+                height: 50px;
+                margin-top: 10vh;
             }
         }
     }
