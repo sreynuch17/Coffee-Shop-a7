@@ -1,5 +1,7 @@
 @import "../SASS/components/navbar.scss";
-body{
+@import"./components/responsive.scss";
+
+body {
     background-color: #BD8A5B;
     color: white;
 }
@@ -9,19 +11,43 @@ body{
     grid-template-rows: 0.6fr 1fr;
     height: 85vh;
     padding-right: 40px;
-    padding-top:95px;
-    .header{
+    padding-top: 95px;
+
+    .header {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 20px;
-        
+
     }
-    
+
+    @include responsive('Tablet') {
+        .header {
+            font-size: 25px;
+        }
+    }
+
+    @include responsive('Mobile') {
+        .header {
+            font-size: 17px;
+        }
+    }
+
     img {
         width: 90vh;
-        &:hover {
-            padding:4px 10px;
+    }
+
+    @include responsive('Tablet') {
+        img {
+            width: 40vh;
+            padding-right: 60px;
+        }
+
+    }
+
+    @include responsive ('Mobile') {
+        img {
+            width: 30vh;
         }
     }
 
@@ -30,20 +56,35 @@ body{
         grid-template-columns: 1fr 1fr;
         padding-top: 65px;
 
-
         .right {
-            h1{
+            h1 {
                 font-size: 25px;
-                
+
             }
 
-            display: grid;
-            grid-template-rows: 0.2fr 0.3fr 0.3fr;
+            @include responsive('Tablet') {
+                h1 {
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                }
+            }
+
+            @include responsive ('Mobile') {
+                h1 {
+                    font-size: 15px;
+                }
+            }
 
             .paragraph {
                 font-size: 20px;
                 padding-bottom: 50px;
-              
+
+            }
+
+            @include responsive('Tablet') {
+                .paragraph {
+                    display: none;
+                }
             }
 
             .size {
@@ -51,6 +92,19 @@ body{
                 grid-template-columns: 1fr 1fr;
                 font-size: 22px;
 
+            }
+
+            @include responsive('Tablet') {
+                .size {
+                    padding-bottom: 20px;
+
+                }
+            }
+
+            @include responsive('Mobile') {
+                .size {
+                    font-size: 17px;
+                }
             }
 
             .star {
@@ -66,27 +120,69 @@ body{
                         color: black;
                     }
                 }
+            }
 
+            @include responsive('Tablet') {
+                .star {
+                    padding-bottom: 20px;
 
+                }
+            }
+
+        }
+
+        @include responsive ('Mobile') {
+            .right {
+                padding: 20px 0 0 0px;
             }
         }
+
+    }
+
+    @include responsive('Tablet') {
+        .in {
+
+            padding: 1px;
+            display: grid;
+            grid-template-rows: 0.2fr;
+            padding-top: 30px;
+            padding-bottom: 100px;
+        }
+    }
+
+    @include responsive('Tablet') {
+        .in {
+            padding-top: 40px;
+        }
+    }
+
+    @include responsive('Tablet') {}
+
+}
+
+@include responsive('Tablet') {
+    .backery {
+        display: grid;
+        height: 40vh;
     }
 }
-// @include tablet{
-//     .backery{
-//         height: 25vh;
-//     }
-// }
 
-.product { 
+@include responsive('Mobile') {
+    .backery {
+        width: 100%;
+        height: 35vh;
+    }
+
+}
+
+
+.product {
     display: grid;
-    grid-template-rows: 0.2fr 7fr;  
+    grid-template-rows: 0.2fr 7fr;
     justify-items: center;
     height: 360vh;
     padding-left: 45px;
     padding-right: 45px;
-    
- 
 
     .backery-h1 {
         border: 1px solid rgb(224, 206, 206);
@@ -96,14 +192,27 @@ body{
         color: black;
         width: 30%;
         text-align: center;
-        &:hover {
-            // border-bottom: 2px solid rgb(245, 0, 0);
-            padding: 10px;
-            background-color: pink;
-            
-           
-        }
 
+        &:hover {
+            padding: 10px;
+        }
+    }
+
+    @include responsive('Tablet') {
+        .backery-h1 {
+            height: 10%;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    @include responsive('Mobile') {
+        .backery-h1 {
+            font-size: 19px;
+            width: 75%;
+        }
     }
 
     .img {
@@ -121,6 +230,40 @@ body{
 
         }
 
+        @include responsive('Tablet') {
+
+            .butter1,
+            .butter2,
+            .butter3,
+            .butter4,
+            .butter5,
+            .butter6,
+            .butter7 {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 20px;
+                gap: 90px;
+            }
+        }
+
+        @include responsive('Mobile') {
+
+            .butter1,
+            .butter2,
+            .butter3,
+            .butter4,
+            .butter5,
+            .butter6,
+            .butter7 {
+
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+
+            }
+        }
+
+
         .butter2,
         .butter4,
         .butter6 {
@@ -128,23 +271,129 @@ body{
             justify-items: end;
         }
 
+        @include responsive('Mobile') {
+
+            .butter2,
+            .butter4,
+            .butter6 {
+
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'image'
+                    'text'
+                ;
+
+                img {
+                    grid-area: image;
+                }
+
+                h1 {
+                    align-items: end;
+                }
+            }
+        }
+
         img {
             width: 70vh;
         }
-        .text p {
+
+        @include responsive('Tablet') {
+            img {
+                width: 30vh;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        @include responsive('Mobile') {
+            img {
+                width: 40vh;
+                place-self: center
+            }
+        }
+
+
+        .dicribetion {
             font-size: 20px;
             padding-top: 30px;
 
         }
-        .text,h1{
+
+        @include responsive('Tablet') {
+            .dicribetion {
+                display: none;
+
+
+            }
+        }
+
+        @include responsive('Mobile') {
+            .text p {
+                display: block;
+                font-size: 16px;
+                padding: 10px;
+            }
+        }
+
+
+        .text,
+        h1 {
             font-size: 30px;
+        }
+
+        @include responsive('Tablet') {
+            h1 {
+                font-size: 20px;
+
+            }
+
+        }
+
+        @include responsive('Mobile') {
+            h1 {
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+
+            }
         }
 
         .price-backery {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            
-            
+
+
         }
+
+        @include responsive('Tablet') {
+            .price-backery {
+                font-size: 18px;
+                padding-bottom: 20px;
+                gap: 30px 30px;
+                padding-top: 10px;
+            }
+        }
+
+        @include responsive('Mobile') {
+            font-size: 15px;
+
+        }
+
+    }
+
+}
+
+@include responsive('Tablet') {
+    .product {
+        display: grid;
+        height: 142vh;
+        padding-top: 50px;
+
+    }
+}
+@include responsive('Mobile') {
+    .product {
+        height: 320vh;
     }
 }
