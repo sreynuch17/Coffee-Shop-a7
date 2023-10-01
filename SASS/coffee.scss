@@ -68,10 +68,13 @@ body {
 
         .right {
             display: grid;
-            grid-template-rows: 0.2fr 0.6fr;
+            grid-template-rows: 0.2fr 0.2fr 0.1fr 0.1fr;
 
             h1 {
-                font-size: 15px;
+                font-size: 25px;
+                display: flex;
+                place-self: start;
+                padding-bottom: 20px;
 
             }
 
@@ -106,14 +109,17 @@ body {
                     display: none;
                 }
             }
-
-            .size {
+            .price{
+                .size {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 font-size: 22px;
                 gap: 10px;
 
             }
+            }
+
+            
 
             @include responsive('Tablet') {
                 .price {
@@ -134,6 +140,7 @@ body {
             .star {
                 display: flex;
                 flex-direction: row;
+            
 
                 .color {
 
