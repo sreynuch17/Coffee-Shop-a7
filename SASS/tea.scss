@@ -29,6 +29,13 @@ body {
             margin-left: 10vh;
         }
     }
+    @include responsive('Mobile') {
+        .header {
+            font-size: 25px;
+            width: 50vh;
+            margin-left: 5vh;
+        }
+    }
 
     img {
         width: 90vh;
@@ -38,6 +45,12 @@ body {
         img {
             width: 45vh;
             margin-top: -200px;
+        }
+    }
+    @include responsive('Mobile') {
+        img {
+            width: 30vh;
+            margin-top: -150px;
         }
     }
 
@@ -60,6 +73,12 @@ body {
                     margin-top: -200px;
                 }
             }
+            @include responsive('Mobile') {
+                h1 {
+                    font-size: 15px;
+                    margin-top: -150px;
+                }
+            }
 
 
             .paragraph {
@@ -69,6 +88,11 @@ body {
             }
 
             @include responsive('Tablet') {
+                .paragraph {
+                    display: none;
+                }
+            }
+            @include responsive('Mobile') {
                 .paragraph {
                     display: none;
                 }
@@ -87,8 +111,17 @@ body {
                     padding-left: 55px;
                     margin-top: -200px;
                     height: 50px;
+                    font-size: 10px;
                 }
             }
+            @include responsive('Mobile') {
+                .size {
+                    padding-left: 55px;
+                    margin-top: -170px;
+                    height: 40px;
+                }
+            }
+
 
             .star {
                 display: flex;
@@ -118,6 +151,18 @@ body {
                     }
                 }
             }
+            @include responsive('Mobile') {
+                .star {
+                    position: absolute;
+                    top: 57vh;
+                    padding-left: 55px;
+
+                    .color {
+                        font-size: 10px;
+                    }
+                }
+            }
+            
         }
     }
 }
@@ -145,6 +190,13 @@ body {
         margin-top: -330px;
     }
 }
+@include responsive('Mobile') {
+    .product {
+        margin-top: -320px;
+        width: 100vh;
+        margin-left: -130px;
+    }
+}
 
 .Tea-menu {
     display: grid;
@@ -155,7 +207,6 @@ body {
         display: grid;
         grid-template-columns: 1fr;
     }
-
 
     .Group {
         display: grid;
@@ -177,6 +228,9 @@ body {
                 margin-top: 8%;
                 @include responsive('Tablet') {
                     margin-top: 5%;
+                }
+                @include responsive('Mobile') {
+                    
                 }
 
                 select {

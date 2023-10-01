@@ -113,7 +113,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .COFFEE .in .right h1 {
-    padding-left: 55px;
+    font-size: 35px;
+    margin-left: 10px;
     margin-top: -200px;
   }
 }
@@ -133,12 +134,11 @@ body {
   gap: 10px;
 }
 @media screen and (max-width: 768px) {
-  .COFFEE .in .right .size {
-    padding-left: 55px;
-    padding-top: -200px;
-    height: 80px;
-    background: #000;
-    margin-bottom: 10px;
+  .COFFEE .in .right .price {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: -140px;
+    margin-left: 8vh;
   }
 }
 .COFFEE .in .right .star {
@@ -155,11 +155,11 @@ body {
 @media screen and (max-width: 768px) {
   .COFFEE .in .right .star {
     position: absolute;
-    top: 62vh;
-    padding-left: 55px;
+    top: 67vh;
+    padding-left: 73px;
   }
   .COFFEE .in .right .star .color {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 

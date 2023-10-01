@@ -63,7 +63,8 @@ body {
 
             @include responsive('Tablet') {
                 h1 {
-                    padding-left: 55px;
+                    font-size: 35px;
+                    margin-left: 10px;
                     margin-top: -200px;
                 }
             }
@@ -90,12 +91,11 @@ body {
             }
 
             @include responsive('Tablet') {
-                .size {
-                    padding-left: 55px;
-                    padding-top: -200px;
-                    height: 80px;
-                    background: #000;
-                    margin-bottom: 10px;
+                .price {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    margin-top: -140px;
+                    margin-left: 8vh;
                 }
             }
 
@@ -119,11 +119,11 @@ body {
             @include responsive('Tablet') {
                 .star {
                     position: absolute;
-                    top: 62vh;
-                    padding-left: 55px;
+                    top: 67vh;
+                    padding-left: 73px;
 
                     .color {
-                        font-size: 15px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -251,7 +251,7 @@ body {
 @include responsive('Tablet') {
     .Specail-coffee {
         display: grid;
-        grid-template-columns: 2fr 2fr ;
+        grid-template-columns: 2fr 2fr;
 
         img {
             width: 25vh;

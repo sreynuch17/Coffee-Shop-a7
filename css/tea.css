@@ -25,6 +25,13 @@ body {
     margin-left: 10vh;
   }
 }
+@media screen and (max-width: 620px) {
+  .tea .header {
+    font-size: 25px;
+    width: 50vh;
+    margin-left: 5vh;
+  }
+}
 .tea img {
   width: 90vh;
 }
@@ -32,6 +39,12 @@ body {
   .tea img {
     width: 45vh;
     margin-top: -200px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .tea img {
+    width: 30vh;
+    margin-top: -150px;
   }
 }
 .tea .in {
@@ -52,11 +65,22 @@ body {
     margin-top: -200px;
   }
 }
+@media screen and (max-width: 620px) {
+  .tea .in .right h1 {
+    font-size: 15px;
+    margin-top: -150px;
+  }
+}
 .tea .in .right .paragraph {
   font-size: 20px;
   padding-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
+  .tea .in .right .paragraph {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
   .tea .in .right .paragraph {
     display: none;
   }
@@ -72,6 +96,14 @@ body {
     padding-left: 55px;
     margin-top: -200px;
     height: 50px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .tea .in .right .size {
+    padding-left: 55px;
+    margin-top: -170px;
+    height: 40px;
   }
 }
 .tea .in .right .star {
@@ -95,6 +127,16 @@ body {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 620px) {
+  .tea .in .right .star {
+    position: absolute;
+    top: 57vh;
+    padding-left: 55px;
+  }
+  .tea .in .right .star .color {
+    font-size: 10px;
+  }
+}
 
 .product {
   display: grid;
@@ -115,6 +157,13 @@ body {
 @media screen and (max-width: 768px) {
   .product {
     margin-top: -330px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .product {
+    margin-top: -320px;
+    width: 100vh;
+    margin-left: -130px;
   }
 }
 .Tea-menu {
