@@ -6,45 +6,56 @@
 body {
   width: 100%;
 }
-body nav {
+
+nav {
   display: flex;
   width: 100%;
   height: 100px;
   color: white;
   background: #560000;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-body nav .navbar-left {
+nav .navbar-left {
   padding-left: 40px;
   display: flex;
   gap: 40px;
   align-items: center;
   flex: 1;
 }
-body nav .navbar-left img {
+nav .navbar-left img {
   width: 85px;
   height: 80px;
   border-radius: 50%;
 }
-body nav .navbar-right {
+nav .navbar-right {
   flex: 1.3;
   display: flex;
   align-items: center;
   padding-right: 40px;
 }
-body nav .navbar-right ul {
+nav .navbar-right ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-body nav .navbar-right ul li {
+nav .navbar-right ul li {
   list-style: none;
   display: flex;
 }
-body nav .navbar-right ul li a {
+nav .navbar-right ul li a {
   text-decoration: none;
   color: white;
   font-size: 25px;
   font-weight: bold;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background-image: url("../image/image 6.png");
+  background-size: cover;
 }
 
 * {
@@ -54,48 +65,58 @@ body nav .navbar-right ul li a {
 
 body {
   width: 100%;
-  background: rgb(214, 143, 167);
+  background: rgb(189, 138, 91);
 }
 
-.Cappuccino {
-  padding-right: 40px;
+.COFFEE {
   color: white;
   display: grid;
   grid-template-rows: 0.6fr 1fr;
+  height: 85vh;
+  font-size: 20px;
+  padding-right: 40px;
+  padding-top: 20vh;
 }
-.Cappuccino .header {
+.COFFEE h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
-.Cappuccino img {
+.COFFEE img {
   width: 90vh;
 }
-.Cappuccino .in {
+.COFFEE .in {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 65px;
 }
-.Cappuccino .in .right {
+.COFFEE .in .right {
   display: grid;
-  grid-template-rows: 0.2fr 0.3fr 0.2fr;
+  grid-template-rows: 0.2fr 0.6fr;
 }
-.Cappuccino .in .right .paragraph {
+.COFFEE .in .right h1 {
+  font-size: 25px;
+}
+.COFFEE .in .right .paragraph {
   font-size: 20px;
+  padding-bottom: 50px;
 }
-.Cappuccino .in .right .size {
+.COFFEE .in .right .size {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 22px;
+  gap: 10px;
 }
-.Cappuccino .in .right .star {
+.COFFEE .in .right .star {
   display: flex;
   flex-direction: row;
 }
-.Cappuccino .in .right .star .color {
+.COFFEE .in .right .star .color {
   color: yellow;
   font-size: 20px;
 }
-.Cappuccino .in .right .star .color .fa:nth-child(5) {
+.COFFEE .in .right .star .color .fa:nth-child(5) {
   color: black;
 }
 
@@ -105,8 +126,9 @@ body {
   justify-items: center;
   padding-left: 45px;
   padding-right: 45px;
+  margin-top: 20vh;
 }
-.product .Coffee-h1 {
+.product h1 {
   border: 1px solid rgb(224, 206, 206);
   padding: 20px;
   background-color: rgb(224, 206, 206);
@@ -120,25 +142,42 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
+  margin: 20px;
 }
-.coffee-menu .right {
+.coffee-menu .Group {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+.coffee-menu .Group img {
+  margin-top: 50px;
+}
+.coffee-menu .Group .right {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  margin: 50px;
 }
-.coffee-menu .right .select {
-  margin-top: 5%;
+.coffee-menu .Group .right h1 {
+  margin-top: 42px;
 }
-.coffee-menu .right .select select {
+.coffee-menu .Group .right .select {
+  margin-top: 8%;
+}
+.coffee-menu .Group .right .select select {
   width: 20vh;
   height: 30px;
   border-radius: 10px;
 }
-.coffee-menu .right .select i {
-  margin-left: 55%;
+.coffee-menu .Group .right .select input[type=text] {
+  width: 8%;
+  height: 50%;
+  text-align: center;
+  margin-left: 90px;
 }
-.coffee-menu .right .select:hover {
-  color: red;
+.coffee-menu .Group .right .select button {
+  background: rgb(47, 47, 129);
+  color: white;
+  width: 25%;
+  height: 60%;
+  border-radius: 5px;
 }
 
 .Specail-coffee {
@@ -154,10 +193,10 @@ body {
   background: red;
   width: 150px;
   height: 50px;
-  margin-top: 25vh;
+  margin-top: 20vh;
   border-radius: 10px;
 }
 .Specail-coffee .coffee-2 img {
   margin-left: 100px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 }/*# sourceMappingURL=coffee.css.map */

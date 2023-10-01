@@ -1,11 +1,17 @@
 @import"../css/navbar.css";
 
-.backery {
+body {
+    background: rgba(189, 138, 91, 1);
+}
+
+.tea {
+    color: white;
     display: grid;
     grid-template-rows: 0.6fr 1fr;
     height: 85vh;
+    font-size: 20px;
     padding-right: 40px;
-    padding-top: 95px;
+    padding-top: 20vh;
 
     .header {
         display: flex;
@@ -15,6 +21,7 @@
 
     }
     
+
     img {
         width: 90vh;
     }
@@ -70,21 +77,81 @@
 
 .product {
     display: grid;
-    grid-template-rows: 0.2fr 4fr;
+    grid-template-rows: 0.2fr 1fr;
     justify-items: center;
 
-
-    .backery-h1 {
+    h1 {
         border: 1px solid rgb(224, 206, 206);
-        padding: 20px;
         background-color: rgb(224, 206, 206);
+        padding: 20px;
         border-radius: 10px;
         color: black;
         width: 30%;
         text-align: center;
-
+        margin-top: 100px;
     }
+}
 
-    
+.Tea-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
 
+    .Group {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        img{
+            margin-top: 20px;
+        }
+
+        .right {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 20px;
+
+            .select {
+                margin-top: 8%;
+
+                select {
+                    width: 20vh;
+                    height: 30px;
+                    border-radius: 10px;
+                }
+
+                input[type=text] {
+                    width: 8%;
+                    height: 60%;
+                    text-align: center;
+                    margin-left: 90px;
+                }
+
+                button {
+                    background: rgb(47, 47, 129);
+                    color: white;
+                    width: 25%;
+                    height: 70%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.Source-of-tea-leaf-origin{
+    background: rgba(255, 255, 0, 0.264);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+    border-radius: 10px;
+    img{
+        background:rgba(212, 208, 208, 0.53);
+        border-radius: 10px;
+    }
+    .text{
+        color: white;
+        margin: 20px;
+        font-size: 30px;
+    }
+    h1{
+        margin-bottom: 40px;
+    }
 }
