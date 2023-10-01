@@ -1,145 +1,184 @@
 @import"./components/responsive.scss";
-footer{
-    background-color:#7E3316;
+@import"./components/variables";
+
+footer {
+    background-color: $brown-color;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    color: white;
-    .footer-left{
+    color: $white-color;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .footer-left {
 
         padding-left: 65px;
-        h2{
-            color: white;
+
+        h2 {
+            color: $white-color;
         }
-        @include responsive('Mobile'){
-            h2{
+
+        @include responsive('Mobile') {
+            h2 {
                 display: none;
             }
         }
-        .list{
+
+        .list {
             display: grid;
             gap: 25px;
             padding-top: 5px;
-            p:hover{
-                background-color: rgb(183, 183, 196);
-                width: 50%;
-                padding-bottom: 10px;
-                border-radius: 10px;
-            }
+
         }
-        @include responsive('Mobile'){
-            .list{
-                // background-color: red;
+
+        @include responsive('Mobile') {
+            .list {
+               
                 display: flex;
                 justify-content: center;
             }
         }
-        
+
     }
-    @include responsive('Tablet'){
-        .footer-left{
+
+    @include responsive('Tablet') {
+        .footer-left {
             display: none;
         }
     }
-    @include responsive('Mobile'){
-        .footer-left{
-            display: block;
+
+    @include responsive('Mobile') {
+        .footer-left {
+            display: none;
 
         }
     }
+
     .footer-center {
         display: flex;
         flex-direction: column;
         font-size: 30px;
         gap: 40px;
         padding-top: 7px;
-        
-        
-        .center-icons{
+
+
+        .center-icons {
             display: flex;
-            .center-icons:hover{
-                background-color: blue;
-            }
+
         }
-        p{
+
+        p {
             font-size: 20px;
         }
-        span{
+
+        span {
             font-size: 15px;
         }
     }
-    @include responsive('Tablet'){
-        .footer-center{
+
+    @include responsive('Tablet') {
+        .footer-center {
             display: none;
         }
     }
-    .footer-right{
+
+    .footer-right {
         padding-right: 65px;
-        h2{
-            color: white;
+
+        h2 {
+            color: $white-color;
         }
-        @include responsive('Tablet'){
-            h2{
+
+        @include responsive('Tablet') {
+            h2 {
                 font-size: 19px;
                 text-align: center;
                 padding-top: 10px;
             }
         }
-        @include responsive('Mobile'){
-            h2{
+
+        @include responsive('Mobile') {
+            h2 {
                 display: none;
             }
         }
-        p{
+
+        p {
             padding-top: 20px;
         }
-        @include responsive('Mobile'){
-            p{
+
+        @include responsive('Mobile') {
+            p {
                 display: none;
             }
         }
-        @include responsive('Tablet'){
-            p{
+
+        @include responsive('Tablet') {
+            p {
                 padding: 8px;
                 padding-left: 20%;
             }
         }
-        .footer-icon{
+
+        .footer-icon {
             padding-top: 45px;
             display: flex;
             flex-direction: row;
             font-size: 35px;
             gap: 30px;
+
+            .fa-facebook-square,.fa-twitter,.fa-instagram,.fa-linkedin-square
+             {
+                &:hover {
+                    color: $blue-color;
+                    box-shadow: $balck-color;
+                    transition: 0.3s;
+                }
+
+                @include responsive('Tablet') {
+                    .footer-icon {
+                        display: flex;
+                        justify-content: center;
+                        font-size: 25px;
+                        padding-left: 19px;
+                        padding: 5px;
+                    }
+                }
+
+            }
+
+            @include responsive('Tablet') {
+                .footer-right {
+                    padding-right: 15px;
+                }
+            }
+
         }
         @include responsive('Tablet'){
             .footer-icon{
-                display: flex;
-                justify-content: center;
-                font-size: 25px;
-                padding-left: 19px;
                 padding: 5px;
+               display: flex;
+               justify-content: center;
             }
         }
-       
-    }
-    @include responsive('Tablet'){
-        .footer-right{
-            padding-right: 15px;
+
+        @include responsive('Mobile') {
+            .footer-icon {
+                height: 100%;
+                text-align: center;
+                
+
+            }
         }
+
     }
 }
-@include responsive('Tablet'){
-    footer{
+@include responsive('Tablet') {
+    footer {
         display: grid;
         grid-template-columns: 1fr;
         padding: 0 30px 0 30px;
         height: 100%;
+        background:$brown-color;
     }
 }
-@include responsive('Mobile'){
-    footer{
-        display: flex;
-        flex-direction: column;
-        padding: 0 1px 0 1px;
-    }
-}
+

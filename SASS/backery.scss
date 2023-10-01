@@ -1,9 +1,17 @@
-@import "../SASS/components/navbar.scss";
+@import "../SASS/components/navbar";
 @import"./components/responsive.scss";
+@import"./components/variables.scss";
 
 body {
-    background-color: #BD8A5B;
-    color: white;
+    background-color: $orange-color;
+    color: $white-color;
+    font-family:Arial, Helvetica, sans-serif;
+}
+@include responsive ('Mobile'){
+    body{
+      height: auto;  
+    }
+    
 }
 
 .backery {
@@ -55,10 +63,14 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-top: 65px;
+        
 
         .right {
+            display: grid;
+            grid-template-rows: 0.2fr 0.3fr 0.2fr;
             h1 {
                 font-size: 25px;
+               
 
             }
 
@@ -77,7 +89,6 @@ body {
 
             .paragraph {
                 font-size: 20px;
-                padding-bottom: 50px;
 
             }
 
@@ -113,11 +124,11 @@ body {
 
                 .color {
 
-                    color: yellow;
+                    color: $yellow-color;
                     font-size: 20px;
 
                     .fa:nth-child(5) {
-                        color: black;
+                        color: $balck-color;
                     }
                 }
             }
@@ -183,13 +194,14 @@ body {
     height: 360vh;
     padding-left: 45px;
     padding-right: 45px;
+    
 
     .backery-h1 {
-        border: 1px solid rgb(224, 206, 206);
+        border: 1px solid $wheth-color;
         padding: 20px;
-        background-color: rgb(224, 206, 206);
+        background-color: $wheth-color;
         border-radius: 10px;
-        color: black;
+        color: $balck-color;
         width: 30%;
         text-align: center;
 
@@ -362,6 +374,7 @@ body {
         .price-backery {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            font-size: 24px;
 
 
         }
@@ -389,7 +402,6 @@ body {
         display: grid;
         height: 142vh;
         padding-top: 50px;
-
     }
 }
 @include responsive('Mobile') {
